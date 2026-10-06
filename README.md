@@ -80,7 +80,7 @@
 
 ### Answers
 
-1.  ### 1. What is NestJS?
+  ### 1. What is NestJS?
 
     **NestJS is a Node.js framework used to build backend and server-side applications.** It helps developers create APIs and business logic in a clean, structured, and scalable way.
 
