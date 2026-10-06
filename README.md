@@ -77,10 +77,29 @@
 | 58  | [Explain the role of NestJS middleware in the context of Microservices and provide a scenario where middleware is beneficial in a Microservices setup?](#explain-the-role-of-nestjs-middleware-in-the-context-of-microservices-and-provide-a-scenario-where-middleware-is-beneficial-in-a-microservices-setup)                                                                                           |
 | 59  | [Discuss the different types of coupling, such as tight coupling and loose coupling, and provide examples of how NestJS modules contribute to achieving loose coupling in a modularized application?](#discuss-the-different-types-of-coupling-such-as-tight-coupling-and-loose-coupling-and-provide-examples-of-how-nestjs-modules-contribute-to-achieving-loose-coupling-in-a-modularized-application) |
 | 60  | [How does NestJS support Server-Sent Events (SSE), and what are the primary advantages of using SSE for real-time communication in web applications?](#how-does-nestjs-support-server-sent-events-sse-and-what-are-the-primary-advantages-of-using-sse-for-real-time-communication-in-web-applications)                                                                                                  |
+| 61  | [What are modules in NestJS?](#what-are-modules-in-nestjs)                                                                                                                                                                                                                                                                                                                                            |
+| 62  | [What are controllers in NestJS?](#what-are-controllers-in-nestjs)                                                                                                                                                                                                                                                                                                                                  |
+| 63  | [What are providers/services in NestJS?](#what-are-providersservices-in-nestjs)                                                                                                                                                                                                                                                                                                                    |
+| 64  | [What is Dependency Injection in NestJS?](#what-is-dependency-injection-in-nestjs)                                                                                                                                                                                                                                                                                                                |
+| 65  | [What are decorators in NestJS?](#what-are-decorators-in-nestjs)                                                                                                                                                                                                                                                                                                                                    |
+| 66  | [What are pipes in NestJS?](#what-are-pipes-in-nestjs)                                                                                                                                                                                                                                                                                                                                              |
+| 67  | [What are interceptors in NestJS?](#what-are-interceptors-in-nestjs)                                                                                                                                                                                                                                                                                                                            |
+| 68  | [What are guards in NestJS?](#what-are-guards-in-nestjs)                                                                                                                                                                                                                                                                                                                                            |
+| 69  | [What are filters in NestJS?](#what-are-filters-in-nestjs)                                                                                                                                                                                                                                                                                                                                          |
+| 70  | [What is Middleware in NestJS?](#what-is-middleware-in-nestjs)                                                                                                                                                                                                                                                                                                                                      |
+| 71  | [How does NestJS handle database integration?](#how-does-nestjs-handle-database-integration)                                                                                                                                                                                                                                                                                                      |
+| 72  | [What are DTOs in NestJS?](#what-are-dtos-in-nestjs)                                                                                                                                                                                                                                                                                                                                                |
+| 73  | [What is the difference between `forRoot()` and `forFeature()` in modules?](#what-is-the-difference-between-forroot-and-forfeature-in-modules)                                                                                                                                                                                                                                                       |
+| 74  | [How does NestJS support Microservices?](#how-does-nestjs-support-microservices)                                                                                                                                                                                                                                                                                                                  |
+| 75  | [What is the difference between `@Module()` imports, providers, controllers, and exports?](#what-is-the-difference-between-module-imports-providers-controllers-and-exports)                                                                                                                                                               |
+| 76  | [How does NestJS handle authentication?](#how-does-nestjs-handle-authentication)                                                                                                                                                                                                                                                                                                                    |
+| 77  | [What is the lifecycle of a request in NestJS?](#what-is-the-lifecycle-of-a-request-in-nestjs)                                                                                                                                                                                                                                                                                                    |
+| 78  | [What is the difference between Monorepo and Microservice architecture in NestJS?](#what-is-the-difference-between-monorepo-and-microservice-architecture-in-nestjs)                                                                                                                                                                   |
+| 79  | [How do you implement caching in NestJS?](#how-do-you-implement-caching-in-nestjs)                                                                                                                                                                                                                                                                                                                |
 
 ### Answers
 
-  ### 1. What is NestJS?
+### 1. What is NestJS?
 
     **NestJS is a Node.js framework used to build backend and server-side applications.** It helps developers create APIs and business logic in a clean, structured, and scalable way.
 
@@ -119,7 +138,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-2.  ### 2. Who developed NestJS? Why did they develop NestJS?
+### 2. Who developed NestJS? Why did they develop NestJS?
 
     **NestJS was developed by Kamil Myśliwiec.** He created it to solve a common problem in the Node.js ecosystem: many backend applications were becoming unstructured, difficult to maintain, and hard to scale.
 
@@ -131,7 +150,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-3.  ### 3. When was NestJS first released?
+### 3. When was NestJS first released?
 
     **NestJS was first released in 2017.** It was introduced as a framework that brought a structured and modular approach to backend development in the Node.js ecosystem.
 
@@ -139,7 +158,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-4.  ### 4. How can you install NestJS and set up a new project on your machine?
+### 4. How can you install NestJS and set up a new project on your machine?
 
     To work with NestJS, you first need **Node.js** and **npm** installed on your machine. After that, you can install the NestJS CLI globally using the following command:
 
@@ -183,7 +202,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-5.  ### 5. What’s the difference between NestJS and Angular?
+### 5. What’s the difference between NestJS and Angular?
 
     **Angular** and **NestJS** are both inspired by the same architectural thinking, but they are used for different parts of the application.
 
@@ -202,7 +221,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-6.  ### 6. Is it possible to use other languages like C++, Ruby, or Python with NestJS? If yes, then how?
+### 6. Is it possible to use other languages like C++, Ruby, or Python with NestJS? If yes, then how?
 
     **NestJS is built on Node.js, so it primarily uses JavaScript or TypeScript.** It is not designed to directly run languages like Python, Ruby, or C++ inside the same application runtime. However, that does not mean you cannot use those languages in a larger system.
 
@@ -221,7 +240,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-7.  ### 7. What are the main components of a NestJS application?
+### 7. What are the main components of a NestJS application?
 
     A NestJS application is usually organized into a few core building blocks that make the project easier to maintain.
 
@@ -245,7 +264,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-8.  ### 8. How to declare a class as a controller in NestJS?
+### 8. How to declare a class as a controller in NestJS?
 
     In NestJS, we declare a class as a controller by using the **@Controller()** decorator. This tells NestJS that the class should handle incoming requests from a given route.
 
@@ -269,7 +288,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-9.  ### 9. Can you explain how to use decorators in a NestJS controller?
+### 9. Can you explain how to use decorators in a NestJS controller?
 
     Decorators are one of the most important parts of NestJS. They are special functions with the `@` symbol and are used to attach metadata to classes, methods, and parameters.
 
@@ -329,7 +348,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-10. ### 10. How can you use route parameters in a NestJS controller?
+### 10. How can you use route parameters in a NestJS controller?
 
     Route parameters are values passed as part of the URL. In NestJS, we can access them using the `@Param()` decorator.
 
@@ -348,7 +367,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-11. ### 11. What is the role of the `@Body()` decorator?
+### 11. What is the role of the `@Body()` decorator?
 
     The `@Body()` decorator is used to extract the data sent in the request body of an HTTP request. In NestJS, this is especially useful when the client sends JSON data to create or update a resource.
 
@@ -369,7 +388,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-12. ### 12. What is an interceptor in the context of NestJS?
+### 12. What is an interceptor in the context of NestJS?
 
     An **interceptor** in NestJS is a class that can intercept the request before it reaches the route handler and also intercept the response before it is sent back to the client. It is commonly used for cross-cutting concerns such as logging, response transformation, caching, authentication, and error handling.
 
@@ -404,7 +423,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-13. ### 13. What are pipes in the context of NestJS?
+### 13. What are pipes in the context of NestJS?
 
     A **pipe** in NestJS is a class used to validate or transform input data before it is passed to the controller or service. Pipes are very useful when you want to ensure the request payload follows the expected rules.
 
@@ -441,7 +460,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-14. ### 14. What are guards in the context of NestJS?
+### 14. What are guards in the context of NestJS?
 
     A **guard** is a class responsible for deciding whether a request should proceed to the route handler or be rejected. Guards are mainly used for access control, such as authentication and authorization.
 
@@ -467,7 +486,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-15. ### 15. What are middlewares in the context of NestJS?
+### 15. What are middlewares in the context of NestJS?
 
     Middleware in NestJS works similarly to Express middleware. It runs before the request reaches the route handler and can inspect or modify the request and response objects.
 
@@ -499,7 +518,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-16. ### 16. Explain the concept of Dependency Injection in NestJS. How does it help in building modular and testable applications?
+### 16. Explain the concept of Dependency Injection in NestJS. How does it help in building modular and testable applications?
 
     **Dependency Injection (DI)** is a design pattern where an object receives its dependencies from outside instead of constructing them inside itself. This is one of the core principles of NestJS.
 
@@ -539,7 +558,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-17. ### 17. What’s the difference between `@Injectable()` and `@Inject()` decorators?
+### 17. What’s the difference between `@Injectable()` and `@Inject()` decorators?
 
     Both decorators are related to dependency injection, but they are used in different situations.
 
@@ -564,7 +583,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-18. ### 18. How does the Nest logger differ from the standard `console.log()` and when would you prefer one over the other?
+### 18. How does the Nest logger differ from the standard `console.log()` and when would you prefer one over the other?
 
     The standard `console.log()` is fine for quick debugging during development, but it is not as structured as the NestJS logger. The NestJS logger provides built-in features like log levels, context, timestamps, and formatting.
 
@@ -591,7 +610,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-19. ### 19. What is the difference between interceptors and middleware?
+### 19. What is the difference between interceptors and middleware?
 
     Both interceptors and middleware can add logic before or after request handling, but they are used for different purposes.
 
@@ -603,7 +622,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-20. ### 20. What testing frameworks work best with NestJS?
+### 20. What testing frameworks work best with NestJS?
 
     NestJS is compatible with several JavaScript and TypeScript testing tools, and the most commonly used framework is **Jest**. It is widely preferred because it is simple, fast, and easy to integrate with TypeScript projects.
 
@@ -623,7 +642,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-21. ### 21. Explain the purpose of DTOs (Data Transfer Objects) in NestJS.
+### 21. Explain the purpose of DTOs (Data Transfer Objects) in NestJS.
 
     A **DTO** is a class used to describe the shape of the data that is expected to be sent or received by an API. In NestJS, DTOs are commonly used with validation and request payloads so that each incoming request is checked before it reaches your business logic.
 
@@ -653,7 +672,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-22. ### 22. How can you handle asynchronous operations in NestJS, and what is the role of the Promise object?
+### 22. How can you handle asynchronous operations in NestJS, and what is the role of the Promise object?
 
     Asynchronous operations are very common in backend applications because database queries, HTTP requests, file processing, and other operations may take time. NestJS supports asynchronous code using `async` and `await`, which allow the application to continue working without blocking the whole server.
 
@@ -677,7 +696,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-23. ### 23. Explain the purpose of the `@InjectRepository()` decorator in NestJS.
+### 23. Explain the purpose of the `@InjectRepository()` decorator in NestJS.
 
     The `@InjectRepository()` decorator is used when working with **TypeORM** to inject a repository into a service. A repository is a class that exposes methods to create, read, update, and delete records for a specific entity.
 
@@ -708,7 +727,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-24. ### 24. Explain the purpose of the `@nestjs/jwt` package in NestJS?
+### 24. Explain the purpose of the `@nestjs/jwt` package in NestJS?
 
     The `@nestjs/jwt` package is used for working with **JSON Web Tokens (JWTs)** in NestJS. JWTs are commonly used for authentication and authorization because they allow the server to verify the identity of a user without needing to store session data on the server.
 
@@ -730,7 +749,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-25. ### 25. Discuss how tokens are used for authorization in an API. What is the difference between authentication and authorization, and how are these processes implemented with tokens?
+### 25. Discuss how tokens are used for authorization in an API. What is the difference between authentication and authorization, and how are these processes implemented with tokens?
 
     **Authentication** means verifying who the user is. For example, the user provides a username and password, and the server checks whether those credentials are valid.
 
@@ -751,7 +770,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-26. ### 26. Why is it important for tokens to have an expiration time? How can you implement token expiration in NestJS, and what role do refresh tokens play in maintaining user sessions?
+### 26. Why is it important for tokens to have an expiration time? How can you implement token expiration in NestJS, and what role do refresh tokens play in maintaining user sessions?
 
     Tokens need an expiration time because if a token is stolen or leaked, it should not remain valid forever. Expiration reduces the risk of misuse and keeps the authentication system safer.
 
@@ -772,7 +791,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-27. ### 27. Describe the mechanism for a token refresh in NestJS. How can you implement an automatic token refresh strategy to maintain user sessions?
+### 27. Describe the mechanism for a token refresh in NestJS. How can you implement an automatic token refresh strategy to maintain user sessions?
 
     A token refresh flow usually works like this:
 
@@ -788,7 +807,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-28. ### 28. How does NestJS support authentication and authorization?
+### 28. How does NestJS support authentication and authorization?
 
     NestJS supports authentication and authorization through a combination of built-in features and integration libraries.
 
@@ -819,7 +838,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-29. ### 29. What is the difference between Provider and Services in NestJS? Can we have a provider without an injectable decorator? Give examples.
+### 29. What is the difference between Provider and Services in NestJS? Can we have a provider without an injectable decorator? Give examples.
 
     In NestJS, a **service** is a specific type of **provider**. All services are providers, but not all providers are services.
 
@@ -849,7 +868,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-30. ### 30. What are custom providers and how do they differ from standard providers in NestJS?
+### 30. What are custom providers and how do they differ from standard providers in NestJS?
 
     A **standard provider** is usually a class decorated with `@Injectable()`. It can be created and injected by NestJS automatically.
 
@@ -887,7 +906,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-31. ### 31. How can you generate API documentation using Swagger in NestJS? Discuss the importance of documenting your API and how it benefits developers.
+### 31. How can you generate API documentation using Swagger in NestJS? Discuss the importance of documenting your API and how it benefits developers.
 
     Swagger is a widely used tool for API documentation. In NestJS, it can be integrated using the `@nestjs/swagger` package.
 
@@ -921,7 +940,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-32. ### 32. Explain the purpose of the `@nestjs/swagger` `@ApiProperty()` and `@ApiOperation()` decorators.
+### 32. Explain the purpose of the `@nestjs/swagger` `@ApiProperty()` and `@ApiOperation()` decorators.
 
     Swagger decorators help NestJS generate meaningful API documentation for controllers and DTOs.
 
@@ -957,7 +976,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-33. ### 33. Explain the purpose of the Dockerfile in a NestJS application, and how it facilitates containerization.
+### 33. Explain the purpose of the Dockerfile in a NestJS application, and how it facilitates containerization.
 
     A **Dockerfile** is a file that defines how an application should be built into a Docker image. In a NestJS application, it helps package the project with its dependencies and runtime environment so it can run consistently anywhere.
 
@@ -979,7 +998,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-34. ### 34. How can you use Docker Compose with NestJS, and what is its role in a multi-container setup?
+### 34. How can you use Docker Compose with NestJS, and what is its role in a multi-container setup?
 
     **Docker Compose** is used to define and run multiple containers together. In a NestJS app, this is especially useful when the application depends on a database, cache, or other service.
 
@@ -1009,7 +1028,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-35. ### 35. What is the purpose of the `@nestjs/passport` package, and how does it facilitate authentication in NestJS?
+### 35. What is the purpose of the `@nestjs/passport` package, and how does it facilitate authentication in NestJS?
 
     The `@nestjs/passport` package integrates NestJS with the popular **Passport.js** authentication library. It allows developers to plug in different authentication strategies such as local login, JWT, OAuth, and social login.
 
@@ -1026,7 +1045,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-36. ### 36. How can you handle file uploads in NestJS, and what is the role of the Multer library?
+### 36. How can you handle file uploads in NestJS, and what is the role of the Multer library?
 
     NestJS supports file uploads via the `@UseInterceptors()` decorator and the `FileInterceptor` or `FilesInterceptor` utilities. These interceptors allow uploaded files to be received from the request and processed by the controller.
 
@@ -1046,7 +1065,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-37. ### 37. How does NestJS handle database interactions, and what are the supported databases?
+### 37. How does NestJS handle database interactions, and what are the supported databases?
 
     NestJS does not directly enforce a single database system. Instead, it provides a modular structure that allows developers to choose the database technology they want, such as TypeORM, Prisma, Mongoose, or Sequelize.
 
@@ -1061,7 +1080,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-38. ### 38. What is a circular dependency (dependency cycle) in NestJS, and how can it be fixed?
+### 38. What is a circular dependency (dependency cycle) in NestJS, and how can it be fixed?
 
     A **circular dependency** occurs when two classes or modules depend on each other directly or indirectly. For example, `ServiceA` depends on `ServiceB`, and `ServiceB` depends on `ServiceA`.
 
@@ -1085,7 +1104,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-39. ### 39. How can you handle errors in NestJS?
+### 39. How can you handle errors in NestJS?
 
     NestJS provides a structured way to handle errors using exceptions. Instead of returning raw errors, the framework allows you to throw HTTP-specific exceptions that are converted into proper responses.
 
@@ -1107,7 +1126,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-40. ### 40. How does NestJS handle CORS (Cross-Origin Resource Sharing)?
+### 40. How does NestJS handle CORS (Cross-Origin Resource Sharing)?
 
     **CORS** allows a browser to allow requests from another origin, which is important when a frontend app runs on a different domain or port than the API server.
 
@@ -1127,7 +1146,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-41. ### 41. Explain the purpose of the `ExecutionContext` in NestJS middleware.
+### 41. Explain the purpose of the `ExecutionContext` in NestJS middleware.
 
     `ExecutionContext` gives access to the current request lifecycle and execution details. It is useful when you need to inspect the request, response, or route metadata while a request is being processed.
 
@@ -1142,7 +1161,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-42. ### 42. How can you implement soft deletes in NestJS using TypeORM, and why might soft deletes be preferred over hard deletes?
+### 42. How can you implement soft deletes in NestJS using TypeORM, and why might soft deletes be preferred over hard deletes?
 
     A **soft delete** does not permanently remove data from the database. Instead, it marks the record as deleted while keeping it in the table.
 
@@ -1170,7 +1189,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-43. ### 43. Explain the concept of environment variables in NestJS, and how can they be utilized for configuration management?
+### 43. Explain the concept of environment variables in NestJS, and how can they be utilized for configuration management?
 
     **Environment variables** are values stored outside the codebase, usually in a `.env` file or OS environment, and they are used to handle configuration that may change between environments such as development, testing, and production.
 
@@ -1197,7 +1216,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-44. ### 44. What is the role of migration scripts in TypeORM, and how can you create and run migrations in a NestJS application?
+### 44. What is the role of migration scripts in TypeORM, and how can you create and run migrations in a NestJS application?
 
     **Migrations** are used to manage database schema changes over time. They keep database structure changes versioned and predictable, especially in team environments and production deployments.
 
@@ -1219,7 +1238,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-45. ### 45. What is the purpose of `ExecutionContext` in NestJS?
+### 45. What is the purpose of `ExecutionContext` in NestJS?
 
     `ExecutionContext` provides information about the current request and the method being executed. It is often used in guards, interceptors, and custom decorators to access details like the request object, route metadata, and execution context.
 
@@ -1229,7 +1248,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-46. ### 46. What is the purpose of the `@Res()` decorator in NestJS controllers?
+### 46. What is the purpose of the `@Res()` decorator in NestJS controllers?
 
     The `@Res()` decorator gives direct access to the underlying HTTP response object. This is useful when you want to control the response manually, such as setting status codes, headers, or sending custom output.
 
@@ -1252,7 +1271,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-47. ### 47. Explain the various modules in NestJS.
+### 47. Explain the various modules in NestJS.
 
     Modules are a core concept in NestJS. A module is a class decorated with `@Module()`, and it organizes the application into logical groups based on feature or responsibility.
 
@@ -1278,7 +1297,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-48. ### 48. How can you secure your NestJS application?
+### 48. How can you secure your NestJS application?
 
     Securing a NestJS application requires a combination of measures such as authentication, authorization, validation, rate limiting, and proper configuration.
 
@@ -1295,7 +1314,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-49. ### 49. What is the entry file of a NestJS application?
+### 49. What is the entry file of a NestJS application?
 
     The main entry file of a NestJS project is usually `main.ts`. This file creates the NestJS application and starts the server.
 
@@ -1316,7 +1335,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-50. ### 50. What is the difference between dependency injection and inversion of control (IoC)?
+### 50. What is the difference between dependency injection and inversion of control (IoC)?
 
     **Inversion of Control (IoC)** is a broad design principle where control of object creation and flow is moved out of the class itself and into a framework or container.
 
@@ -1326,7 +1345,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-51. ### 51. How can you implement caching in NestJS?
+### 51. How can you implement caching in NestJS?
 
     Caching is used to reduce repeated work and improve performance by storing frequently used data temporarily. In NestJS, the `@nestjs/cache-manager` package is commonly used for this purpose.
 
@@ -1346,7 +1365,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-52. ### 52. Explain the purpose of the Dependency Inversion Principle (DIP) in NestJS.
+### 52. Explain the purpose of the Dependency Inversion Principle (DIP) in NestJS.
 
     The **Dependency Inversion Principle** is one of the SOLID principles. It says that high-level modules should not depend on low-level modules; both should depend on abstractions.
 
@@ -1356,7 +1375,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-53. ### 53. How can you schedule tasks in NestJS?
+### 53. How can you schedule tasks in NestJS?
 
     NestJS supports scheduled tasks using the `@nestjs/schedule` package, which is built on top of the cron library.
 
@@ -1379,7 +1398,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-54. ### 54. How can you handle database transactions in NestJS, and why are transactions important in certain scenarios?
+### 54. How can you handle database transactions in NestJS, and why are transactions important in certain scenarios?
 
     A **transaction** ensures that a set of database operations succeeds or fails together. This is important when multiple changes must be treated as one atomic unit.
 
@@ -1389,7 +1408,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-55. ### 55. How can you implement versioning in NestJS APIs?
+### 55. How can you implement versioning in NestJS APIs?
 
     API versioning allows you to maintain multiple versions of the same endpoint while keeping the application backward compatible.
 
@@ -1412,7 +1431,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-56. ### 56. Explain the purpose of the `@nestjs/graphql` `@Resolver()` and `@Scalar()` decorators, and how they relate to GraphQL in NestJS.
+### 56. Explain the purpose of the `@nestjs/graphql` `@Resolver()` and `@Scalar()` decorators, and how they relate to GraphQL in NestJS.
 
     GraphQL is a query language for APIs that allows clients to request exactly the data they need. NestJS integrates with GraphQL through the `@nestjs/graphql` package.
 
@@ -1424,7 +1443,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-57. ### 57. Explain the concept of serialization and deserialization in NestJS.
+### 57. Explain the concept of serialization and deserialization in NestJS.
 
     **Serialization** is the process of converting an object into a format that can be transmitted or stored, usually JSON.
 
@@ -1436,7 +1455,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-58. ### 58. Explain the role of NestJS middleware in the context of microservices and provide a scenario where middleware is beneficial.
+### 58. Explain the role of NestJS middleware in the context of microservices and provide a scenario where middleware is beneficial.
 
     Middleware in NestJS can be used to handle cross-cutting concerns before a request reaches a handler. In a microservices architecture, this is useful for tasks such as authentication, logging, tracing, request enrichment, and validation.
 
@@ -1448,7 +1467,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-59. ### 59. Discuss the different types of coupling, such as tight coupling and loose coupling, and provide examples of how NestJS modules contribute to achieving loose coupling in a modularized application.
+### 59. Discuss the different types of coupling, such as tight coupling and loose coupling, and provide examples of how NestJS modules contribute to achieving loose coupling in a modularized application.
 
     **Tight coupling** means one class or module depends heavily on another implementation. That makes the system harder to change and test.
 
@@ -1467,7 +1486,7 @@
 
     **[⬆ Back to Top](#table-of-contents)**
 
-60. ### 60. How does NestJS support Server-Sent Events (SSE), and what are the primary advantages of using SSE for real-time communication in web applications?
+### 60. How does NestJS support Server-Sent Events (SSE), and what are the primary advantages of using SSE for real-time communication in web applications?
 
     NestJS supports **Server-Sent Events (SSE)** using the `@Sse()` decorator. This allows the server to push updates to the client over a single HTTP connection without the client needing to continuously poll the server.
 
@@ -1485,5 +1504,165 @@
     SSE is useful for real-time dashboards, notifications, live feeds, stock tickers, and monitoring tools. Its main advantages are simplicity, automatic reconnection, standard HTTP compatibility, and efficient one-way data streaming from server to client.
 
     It is ideal when the client only needs updates pushed by the server, rather than full bidirectional communication.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 61. What are modules in NestJS?
+
+    A module in NestJS is a logical grouping of related components such as controllers, providers, and services. Every NestJS application has at least one root module, usually `AppModule`.
+
+    Modules help keep the application organized, reusable, and easier to scale. They allow you to split features into independent sections like users, products, auth, and orders.
+
+    This structure improves maintainability and creates cleaner boundaries between different parts of the application.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 62. What are controllers in NestJS?
+
+    Controllers are responsible for handling incoming HTTP requests and returning the appropriate responses. They are decorated with `@Controller()` and route handlers use decorators such as `@Get()`, `@Post()`, and `@Delete()`.
+
+    In simple terms, controllers act as the entry point for the API and delegate business logic to services. This keeps the request/response layer separate from the business logic.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 63. What are providers/services in NestJS?
+
+    Providers are classes that can be injected into other classes using NestJS dependency injection. The most common type is a service, which contains the business logic.
+
+    Services are annotated with `@Injectable()` and can be used by controllers, other services, repositories, or guards. This helps keep the application modular and easier to test.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 64. What is Dependency Injection in NestJS?
+
+    Dependency Injection (DI) is a design pattern where classes receive their dependencies from the framework instead of creating them manually.
+
+    In NestJS, DI makes it easier to manage object lifetimes, improve reusability, and write testable code. For example, a controller can receive a `UsersService` instance without needing to instantiate it directly.
+
+    This reduces coupling and keeps the codebase cleaner and more maintainable.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 65. What are decorators in NestJS?
+
+    Decorators are special TypeScript functions that attach metadata to classes, methods, or properties. NestJS heavily uses decorators to define routes, controllers, modules, injectable services, and validation rules.
+
+    Common examples include `@Controller()`, `@Get()`, `@Post()`, `@Injectable()`, and `@Module()`. They make the framework expressive and helps define application structure in a declarative way.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 66. What are pipes in NestJS?
+
+    Pipes are used to transform or validate incoming data before it reaches the controller or service layer. They are especially useful for data validation and sanitization.
+
+    For example, a `ValidationPipe` can validate request payloads against a DTO, while custom pipes can convert values into the expected format.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 67. What are interceptors in NestJS?
+
+    Interceptors are used to execute logic before and/or after method execution. They are useful for logging, response transformation, caching, timing, and global behaviors.
+
+    For example, an interceptor can measure the time taken by a request and attach metadata to the response. This makes cross-cutting concerns easier to handle in a centralized way.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 68. What are guards in NestJS?
+
+    Guards are used to control access to routes and determine whether a request should proceed. They are commonly used for authentication and authorization.
+
+    A guard can check whether a user is authenticated or has permission to access a specific resource before the controller method is executed.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 69. What are filters in NestJS?
+
+    Exception filters are used to handle errors and customize how exceptions are returned to the client. They allow developers to intercept thrown exceptions and transform them into meaningful API responses.
+
+    This is useful when you want consistent error structures, custom response messages, or logging for specific exception types.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 70. What is Middleware in NestJS?
+
+    Middleware runs before route handlers are executed and is typically used for tasks such as logging, request parsing, cookie handling, and authentication checks.
+
+    In NestJS, middleware sits at the edge of the request lifecycle. It can inspect or modify the request object before the controller logic runs.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 71. How does NestJS handle database integration?
+
+    NestJS integrates with databases using packages such as TypeORM, Sequelize, Prisma, and Mongoose. These libraries can be configured and injected into services to manage data persistence.
+
+    This allows the application to separate business logic from database logic, making the code more modular and easier to test.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 72. What are DTOs in NestJS?
+
+    DTO stands for Data Transfer Object. It defines the structure of data sent to or returned from an API and helps validate request payloads.
+
+    DTOs are often used with validation decorators like `@IsString()`, `@IsEmail()`, and `@IsNotEmpty()`. This ensures that incoming data matches the expected contract before it reaches the application logic.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 73. What is the difference between `forRoot()` and `forFeature()` in modules?
+
+    `forRoot()` is typically used when configuring a module globally, such as a database connection or shared configuration. It is often called once in the root module.
+
+    `forFeature()` is used inside feature modules to register specific entities, repositories, or configuration that are only relevant to that feature.
+
+    The main idea is to configure shared behavior globally with `forRoot()` and feature-specific behavior locally with `forFeature()`.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 74. How does NestJS support Microservices?
+
+    NestJS provides built-in support for microservices through the `@nestjs/microservices` package. It supports communication patterns such as TCP, Redis, Kafka, gRPC, NATS, and RabbitMQ.
+
+    This allows an application to be split into smaller services that communicate through messages instead of directly calling each other over HTTP.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 75. What is the difference between `@Module()` imports, providers, controllers, and exports?
+
+    In a NestJS module, `imports` are other modules that are required by this module, `controllers` handle requests, and `providers` contain the business logic or services.
+
+    `exports` are providers made available to other modules that import this module. This helps share functionality across the application without duplicating code.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 76. How does NestJS handle authentication?
+
+    NestJS handles authentication by combining guards, strategies, and services. The most common setup is JWT authentication using `@nestjs/passport` and Passport strategies.
+
+    A guard checks whether the user is authenticated before allowing access to a route, while the strategy validates credentials or tokens and attaches the user to the request.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 77. What is the lifecycle of a request in NestJS?
+
+    A typical request in NestJS follows a defined lifecycle: middleware runs first, then guards, then interceptors before the controller, then pipes, then the controller logic, then the response is processed by interceptors and filters if needed.
+
+    This sequence helps organize request validation, authorization, logging, transformation, and error handling in a clear and consistent way.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 78. What is the difference between Monorepo and Microservice architecture in NestJS?
+
+    A monorepo keeps multiple applications or packages in the same repository and shares common code, tooling, and configurations. It is often easier to manage for teams working on related apps.
+
+    A microservice architecture splits an application into independent services that communicate with each other over messages or APIs. This improves scalability and fault isolation but adds operational complexity.
+
+    NestJS supports both patterns depending on the project needs.
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### 79. How do you implement caching in NestJS?
+
+    NestJS supports caching through packages like `@nestjs/cache-manager` or by integrating with Redis. Caching helps reduce repeated expensive operations such as database lookups and external API calls.
+
+    You can use `CacheInterceptor` for automatic response caching or manually store values in a cache manager. This improves performance for frequently requested data.
 
     **[⬆ Back to Top](#table-of-contents)**
